@@ -1,0 +1,42 @@
+apiVersion: skaffold/v3alpha1
+kind: Config
+metadata:
+  name: skaffold-deployment
+build:
+  tagPolicy:
+    gitCommit: { }
+  # defines where to find the code at build time and where to push the resulting image
+  artifacts:
+    - image: sentence_transformer
+      context: components/sentence_transformer
+      docker:
+        dockerfile: Dockerfile
+        # buildArgs:
+        #   PARAM: ''
+      sync:
+        infer:
+          - '**/*'
+      platforms:
+        - "linux/amd64"
+    - image: whispher_transcripter
+      context: components/whispher_transcripter
+      docker:
+        dockerfile: Dockerfile
+        # buildArgs:
+        #   PARAM: ''
+      sync:
+        infer:
+          - '**/*'
+      platforms:
+        - "linux/amd64"
+    - image: youtube_downloader
+      context: components/youtube_downloader
+      docker:
+        dockerfile: Dockerfile
+        # buildArgs:
+        #   PARAM: ''
+      sync:
+        infer:
+          - '**/*'
+      platforms:
+        - "linux/amd64"
