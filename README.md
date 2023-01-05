@@ -2,7 +2,7 @@
 
 Kubeflow Tribal Knowldege is a an open source machine learning model that provides answers to questions about Kubeflow.    
 The answers are provided from training the model on the transcriptions of Kubeflow Community Meetings. 
-The goal is to supplement the Kubeflow documentation with an easy way to find current discussions on features that are in discussion, development or have limited documentation.
+The goal is to supplement the Kubeflow documentation with an easy way to find current informaation on features that are in discussion, development or have limited documentation.
 
 The model is based on this implementation with some modifications for Kubeflow and The content is provided by transcribing recordings in the Kubeflow Community Youtube Channel.
 https://www.pinecone.io/learn/openai-whisper/
