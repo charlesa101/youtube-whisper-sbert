@@ -1,4 +1,4 @@
-# Kubeflow Tribal Knowledge in youtube-whisper-sbert
+# Kubeflow Tribal Knowledge
 
 Kubeflow Tribal Knowldege is a an open source machine learning model that provides answers to questions about Kubeflow.    
 The answers are provided from training the model on the transcriptions of Kubeflow Community Meetings. 
