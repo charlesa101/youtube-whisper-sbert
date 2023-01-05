@@ -10,7 +10,7 @@ https://www.pinecone.io/learn/openai-whisper/
 It uses these components
 1) Pytube to download MP3s from Youtube channel
 2) Whisper for transcoding into 30 second segments
-3) S Bert for sentence transformer and sentence embeddings
+3) S Bert for sentence transformer and transcript embeddings
 4) Pinecone for storing 30 second segments with timestamps, and youtube channel info
 5) Gradio for User Inferface (question input, answer output)
 
