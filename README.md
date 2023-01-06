@@ -13,7 +13,7 @@ The document proposes an implementation using these components:
 4) Pinecone for storing 30 second segments with timestamps, and youtube channel info
 5) Gradio for User Inferface (question input, answer output)
 
-And the workflow is shown in the diagram below
+And the workflow is shown in the diagram below:
 
 <img width="895" alt="Screen Shot 2023-01-05 at 11 49 53 AM" src="https://user-images.githubusercontent.com/10553232/210847149-ad9d2172-bcb1-4d81-a5d6-8ce2814066e0.png">
 
