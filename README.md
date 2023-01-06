@@ -19,4 +19,4 @@ And the workflow is shown in the diagram below
 <img width="895" alt="Screen Shot 2023-01-05 at 11 49 53 AM" src="https://user-images.githubusercontent.com/10553232/210847149-ad9d2172-bcb1-4d81-a5d6-8ce2814066e0.png">
 
 
-The Kubeflow team is working to simplify this workflow and components to run in Kubeflow using Kubeflow notebooks, pipelines and other componnents.
+The Kubeflow team is working to simplify this workflow, which includes integrating the dependencies so that they will easily run in Kubeflow.
