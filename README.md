@@ -1,17 +1,15 @@
 # Kubeflow Tribal Knowledge
 
-Kubeflow Tribal Knowldege is a an open source machine learning model that provides answers to questions about Kubeflow.    
-The answers are provided from training the model on the transcriptions of Kubeflow Community Meetings. 
-The goal is to supplement the Kubeflow documentation with an easy way to find current information on features that are in discussion, development or have limited documentation.
+Kubeflow Tribal Knowledge is an open source machine learning model that provides answers to questions about Kubeflow. The answers are provided from training the model on the transcriptions of Kubeflow Community Meetings. The goal is to supplement the Kubeflow documentation with an easy way to find current information on features that are in discussion, development or have limited documentation.
 
-The model is based on the implementation defined in this post,https://www.pinecone.io/learn/openai-whisper/,  with some modifications for Kubeflow.  The content is provided by transcribing recordings in the Kubeflow Community Youtube Channel.
+The model is based on the implementation defined in this post,https://www.pinecone.io/learn/openai-whisper/, with some modifications for Kubeflow.  The Kubeflow content is provided by transcribing recordings in the Kubeflow Community Youtube Channel.
 
 The document proposes an implementation using these components:
 1) Pytube to download MP3s from Youtube channel
 2) Whisper for transcoding into 30 second segments
-3) S Bert for sentence transformer and transcript embeddings
+3) Sentence BERT (SBERT) for sentence transformer and transcript embeddings
 4) Pinecone for storing 30 second segments with timestamps, and youtube channel info
-5) Gradio for User Inferface (question input, answer output)
+5) Gradio for User Interface (question input, answer output)
 
 And the workflow is shown in the diagram below:
 
