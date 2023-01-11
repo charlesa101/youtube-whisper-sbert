@@ -1,6 +1,6 @@
 # Kubeflow Tribal Knowledge
 
-Kubeflow Tribal Knowledge is an open source machine learning model that provides answers to questions about Kubeflow. The answers are provided from training a Natural Language Processing (NLP) model on the transcriptions of Kubeflow community meeting recordings. The goal is to supplement the Kubeflow documentation with an easy way to find current information on features that are in discussion, development or have limited documentation.
+Kubeflow Tribal Knowledge is an open source machine learning model that provides answers to questions about Kubeflow. The answers are provided from training a Natural Language Processing (NLP) model on the transcriptions of Kubeflow community meeting recordings. The goal is to supplement the Kubeflow documentation with an easy way to find current information on features that are in discussion, development and/or have limited documentation.
 
 The model is based on the implementation defined in this post,https://www.pinecone.io/learn/openai-whisper/, with some modifications for Kubeflow.  The Kubeflow content is provided by transcribing recordings in the Kubeflow Community Youtube Channel.
 
