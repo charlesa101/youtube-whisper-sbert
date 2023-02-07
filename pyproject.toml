@@ -15,6 +15,9 @@ openai-whisper = "^20230124"
 black = "^22.12.0"
 isort = "^5.11.4"
 ipykernel = "^6.20.2"
+tqdm = "4.64.1"
+sentence-transformers = "2.2.2"
+pinecone-client = "2.1.0"
 
 
 [tool.poetry.group.google-dev.dependencies]
