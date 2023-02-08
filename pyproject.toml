@@ -8,7 +8,7 @@ packages = [{include = "youtube_whisper_sbert"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-kfp = {version = "2.0.0b11", extras = ["all"]}
+kfp = {version = "2.0.0b12", extras = ["all"]}
 openai-whisper = "^20230124"
 
 [tool.poetry.group.dev.dependencies]

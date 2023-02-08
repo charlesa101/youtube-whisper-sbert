@@ -1125,13 +1125,13 @@ test = ["ipykernel", "pre-commit", "pytest", "pytest-cov", "pytest-timeout"]
 
 [[package]]
 name = "kfp"
-version = "2.0.0b11"
+version = "2.0.0b12"
 description = "Kubeflow Pipelines SDK"
 category = "main"
 optional = false
 python-versions = ">=3.7.0"
 files = [
-    {file = "kfp-2.0.0b11.tar.gz", hash = "sha256:9c4a0cb2b18e2f48d2daba6f19ea3c51ec6d346c1e0858e32d7baa57b8582eb4"},
+    {file = "kfp-2.0.0-beta.12.tar.gz", hash = "sha256:2042b789417261d6e3a0c82e1fb39525c8c43de87062a5d95a130de0c60cd233"},
 ]
 
 [package.dependencies]
@@ -1142,7 +1142,7 @@ google-api-core = ">=1.31.5,<2.0.0 || >2.3.0,<3.0.0dev"
 google-auth = ">=1.6.1,<3"
 google-cloud-storage = ">=2.2.1,<3"
 kfp-pipeline-spec = "0.2.0"
-kfp-server-api = ">=2.0.0a0,<3.0.0"
+kfp-server-api = "2.0.0a6"
 kubernetes = ">=8.0.0,<24"
 protobuf = ">=3.13.0,<4"
 PyYAML = ">=5.3,<7"
@@ -2843,4 +2843,4 @@ dev = ["black (>=19.3b0)", "pytest (>=4.6.2)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "1ebe67af3f59f1796f910df039c302a139a96bff588317a2cd7276c8e421462f"
+content-hash = "8ce25de8dddf54dbfc59856af71b80ba808dcf774e7f38fc3c7ebd6f1dd19b37"
