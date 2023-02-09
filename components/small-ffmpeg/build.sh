@@ -1,6 +1,6 @@
 #!/bin/bash -e
 image_name=davidnet/small-ffmpeg
-image_tag=v1
+image_tag=v2
 full_image_name=${image_name}:${image_tag}
 
 cd "$(dirname "$0")" 

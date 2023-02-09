@@ -53,7 +53,7 @@ def download_videos(
 
 
 @dsl.component(
-    base_image="davidnet/small-ffmpeg:v1",
+    base_image="davidnet/small-ffmpeg:v2",
     packages_to_install=["openai-whisper==20230124"],
 )
 def transcribe_audios(
@@ -72,6 +72,7 @@ def transcribe_audios(
     with open(video_titles.path, "r") as f:
         video_titles_dict = json.load(f)
     device = "cuda" if torch.cuda.is_available() else "cpu"
+    print(f"Using {device}")
     # model = whisper.load_model("medium.en").to(device)
     model = whisper.load_model(whisper_model).to(device)
     print("model loaded")
@@ -127,11 +128,12 @@ def download_and_parse(urls: Input[Artifact], videos_ids: Output[Artifact]):
 
 
 @dsl.component(
+    base_image="pytorch/pytorch:1.13.1-cuda11.6-cudnn8-runtime",
     packages_to_install=[
         "sentence-transformers==2.2.2",
         "pinecone-client==2.1.0",
         "tqdm==4.64.1",
-    ]
+    ],
 )
 def create_and_push_embeddings(
     transcriptions: Input[Artifact],
